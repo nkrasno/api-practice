@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+  font-family: Calibri, sans-serif;
+}
+
+#videoFileInput {
+  display: none;
+}
+
+.loading-message {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#screen1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#screen2 {
+  display: none;
+}
+
+#video-container {
+  position: relative;
+  width: 640px;
+}
+
+video {
+  width: 100%;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#another-video {
+  display: flex;
+  justify-content: center;
+}
+
+#select-another-video {
+  width: auto;
+}
+
+.control-button {
+  background-color: #3498DB;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px #000;
+  width: 100%;
+}
+
+.control-button:hover {
+  background-color: #2779B5;
+}
+
+.control-button:active {
+  filter: brightness(0.7);
+  box-shadow: 0 1px #666;
+  transform: translateY(3px);
+  transition-duration: 5ms;
+}
+
+#select-video-message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#select-video-message p {
+  font-size: 20px;
+  font-weight: bold;
+}

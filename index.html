@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Práctica API - Samsung desarrolladoras</title>
+</head>
+
+<body>
+  <!-- Primera 'pantalla' de seleccion de video -->
+  <div id="screen1">
+    <h1>Por favor seleccione un video</h1>
+    <button class="control-button" id="fileSelector">Buscar en mi equipo</button>
+    <input type="file" id="videoFileInput" accept="video/*">
+  </div>
+
+  <p class="loading-message" id="loadingMessage">Cargando video, espere unos instantes</p>
+
+  <!-- Segunda 'pantalla' de reproduccion de video -->
+  <div id="screen2">
+    <div id="video-container">
+      <video id="videoPlayer" controls autoplay></video>
+    </div>
+    <div id="controls">
+      <button class="control-button" id="playPauseButton">Reproducir/Pausa</button>
+      <button class="control-button" id="volumeUpButton">Subir Volumen</button>
+      <button class="control-button" id="volumeDownButton">Bajar Volumen</button>
+    </div>
+    <div id="another-video"><button class="control-button" id="select-another-video">Seleccionar otro video</button> </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
